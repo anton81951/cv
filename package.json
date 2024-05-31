@@ -1,11 +1,11 @@
 {
-  "name": "hugs-for-bugs",
+  "name": "cv",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "vite build --base=/hugs-for-bugs/",
+    "build": "vite build --base=/cv/",
     "preview": "vite preview"
   },
   "devDependencies": {
