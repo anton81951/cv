@@ -1,0 +1,75 @@
+/* TITLE */
+
+.work-together-title {
+  position: relative;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+
+.work-together-title-span {
+  color: yellow;
+}
+
+/* CONTACTS */
+.work-together-contacts-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.work-together-contacts-list-link {
+  font-style: normal;
+  display: flex;
+}
+
+.contacts-icon {
+  width: 30px;
+}
+
+.contacts-link {
+  margin: 0 auto;
+  max-width: fit-content;
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  border-color: transparent;
+  border-radius: 20px;
+  color: var(--primary-dark-color);
+  transition: background-color var(--transition);
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap:10px;
+  font-size: 12px;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  background-color: var(--accent-color);
+  filter: drop-shadow(1px 1px 1px yellow);
+}
+
+@media screen and (min-width: 768px) {
+
+
+  .work-together-logo-title {
+    gap: 20px;
+  }
+  .work-together-title {
+    font-size: 30px;
+  }
+
+  .work-together-contacts-list {
+    gap: 8px;
+  }
+  .work-together-contacts-list {
+    align-items: baseline;
+  }
+  .contacts-link {
+    font-size: 16px;
+  }
+}
+

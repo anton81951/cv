@@ -1,0 +1,314 @@
+
+
+div > .ac {
+  margin-top: 8px;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  box-sizing: border-box;
+  width: 100%;
+  background-color: transparent;
+}
+
+div > .ac .ac-header {
+  margin: 0;
+  padding: 0;
+}
+div > .ac .ac-trigger {
+  font: inherit;
+  text-align: left;
+  width: 100%;
+  padding: 8px 32px 8px 8px;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  transition: color 0.25s ease;
+  position: relative;
+  text-decoration: none;
+  border: 0;
+  height: 72px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+div > .ac .ac-trigger {
+  color: yellow;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+div > .ac .ac-trigger:focus,
+div > .ac .ac-trigger:hover {
+  color: var(--primary-light-color);
+}
+
+div > .ac .ac-panel {
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
+  transition: all 1s ease-in;
+}
+div > .ac .ac-panel .ac-text {
+  padding: 8px;
+  margin: 0;
+  text-align: right;
+}
+
+div > .ac.is-active > .ac-header .ac-trigger::after {
+  content: '';
+  display: none;
+}
+
+div > .ac .ac-trigger::after {
+  content: '';
+  display: none;
+}
+div > .ac .ac-trigger .ac-icon {
+  background-color: yellow;
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  transform: rotate(0);
+  transition: all (--transition);
+}
+
+div > .ac .ac-trigger .ac-icon:hover,
+div > .ac .ac-trigger .ac-icon:focus {
+  border-color: var(--primary-light-color);
+  background-color: aliceblue;
+  
+}
+
+div > .ac .ac-trigger .ac-icon-active {
+  transform: rotate(180deg);
+  transition: all var(--transition);
+}
+div > .ac .ac-trigger .ac-icon-active-first {
+  transform: rotate(-180deg);
+  transition: all var(--transition);
+}
+.ac.js-enabled .ac-panel {
+  visibility: hidden;
+}
+.ac.is-active .ac-panel {
+  visibility: visible;
+}
+
+.am-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 32px;
+
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+.am-aboutme {
+  width: 100%;
+}
+.am-accordion-wrap {
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  display: flex;
+  justify-content: space-between;
+}
+.am-wrapper {
+  width: 100%;
+  height: 72px;
+}
+.aboutme-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-bottom: 24px;
+  line-height: 2;
+}
+
+.aboutme-list-title, .aboutme-list-link {
+  color: yellow;
+}
+
+.aboutme-list-link:hover {
+  color: aliceblue;
+}
+
+/* ====== SWIPER STYLES ====== */
+.swiper-title-top {
+  color: yellow;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+
+.swiper-section {
+  width: 100%;
+  position: relative;
+}
+
+.swiper-section .swiper {
+  margin-left: 0;
+}
+
+.swiper-skills-list__wrapper {
+  display: flex;
+  align-items: center;
+  width: 130px;
+}
+
+.swiper-skills-list-container {
+  overflow: hidden;
+  display: flex;
+  width: 200px;
+}
+
+.swiper-skills-slide .swiper-slide-container {
+width: 90px;
+height: 90px;
+  max-width: 100%;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.swiper-slide-container img {
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-skill-list-next {
+  position: absolute;
+  background-color: transparent;
+  right: 0;
+  top: 50%;
+  transform: translateY(-40%);
+}
+
+.swiper-skill-list-button {
+  margin-right: 30px;
+}
+
+.swiper-skill-list-button > svg {
+  stroke: var(--primary-dark-color);
+  background-color: yellow;
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+
+}
+
+.swiper-skill-list-next:hover .about-me-arrow {
+  background-color: var(--primary-light-color);
+}
+
+.swiper-skill-list-next:focus .about-me-arrow {
+  background-color: var(--primary-light-color);
+}
+
+.swiper-skill-list-button {
+  background-color: #1c1d20;
+  border: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-skills-list-container {
+    width: 600px;
+  }
+
+  .swiper-skill-list-next svg {
+    height: 44px;
+    width: 43px;
+  }
+
+  .swiper-skills-slide .swiper-slide-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide-container-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .swiper-title-top {
+    font-size: 30px;
+  }
+
+  .swiper-skills-list-container {
+    width: 1200px;
+  }
+
+  .swiper-slide-container-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .swiper-skill-list-next svg {
+    height: 44px;
+    width: 44px;
+  }
+
+  .swiper-skills-list-container .swiper-wrapper {
+    width: 1200px;
+  }
+
+  .swiper-skills-slide .swiper-slide-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  div > .ac .ac-trigger {
+    font-size: 30px;
+  }
+}
+
+/* ===================================== */
+
+.about-me__section {
+  padding: 64px 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 32px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+  .about-me__section {
+    max-width: 704px;
+    padding: 64px 0;
+    gap: 64px;
+  }
+
+  .am-headline {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-me__section {
+    max-width: 1440px;
+    padding: 96px 32px;
+    gap: 96px;
+  }
+
+  .aboutme-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 48px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,238 @@
+.projects-swiper .swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+  content: '';
+}
+
+.project-section {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.projects-swiper-wrapper {
+  margin-bottom: 20px;
+}
+
+.project-section-header {
+  margin-bottom: 32px;
+  font-weight: 600;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: yellow;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+
+.project-section-light-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primary-light-color);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.light-part-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.project-section-skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: var(--primary-dark-color);
+  font-size: 12px;
+}
+
+.project-section-list-skills-item {
+  font-style: italic;
+  color: gray;
+}
+
+.projects-section-bold {
+  font-weight: 800;
+}
+
+.project-section-title {
+  color: var(--primary-dark-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+
+.project-ref-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.see-project-ref {
+  margin: 0 auto;
+  max-width: fit-content;
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  border-color: transparent;
+  border-radius: 20px;
+  color: var(--primary-dark-color);
+  transition: background-color var(--transition);
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap:13px
+}
+
+.project-ref-pic {
+  width: 20px;
+}
+
+.see-project-ref:hover,
+.see-project-ref:focus {
+  background-color: var(--accent-color);
+  filter: drop-shadow(1px 1px 1px yellow);
+}
+
+.project-section-svg {
+  width: 25px;
+  height: 24px;
+  margin: auto;
+}
+
+.project-section-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: yellow;
+  border-color: yellow;
+}
+
+.project-section-btn:hover,
+.project-section-btn:focus {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.arrows-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-section-svg {
+  stroke: var(--primary-dark-color);
+}
+
+.swiper-button-projects-disabled {
+  background-color: var(--border-color);
+  border-color: var(--border-color);
+}
+
+.swiper-button-projects-disabled:hover,
+.swiper-button-projects-disabled:focus {
+  background-color: var(--border-color);
+  border-color: var(--border-color);
+  cursor:auto;
+}
+
+
+.swiper-button-projects-disabled > .project-section-svg {
+  stroke: var(--primary-dark-color);
+}
+
+.project-section-dark-part {
+  background-color: var(--cards-color);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  max-height: 150px;
+}
+
+.project-section-img {
+  min-width: 100%;
+  border-radius: 20px;
+  object-fit: fill;
+}
+
+@media screen and (min-width: 768px) {
+  .project-section {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+
+  .project-section-dark-part {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    max-height: 500px;
+  }
+
+  .project-section-header {
+    font-size: 30px;
+  }
+
+  .project-section-title {
+    max-width: 494px;
+    font-size: 30px;
+    line-height: 100%;
+  }
+
+  .light-part-wrap {
+    gap: 32px;
+  }
+
+  .arrows-container {
+    gap: 20px;
+  }
+
+  .project-section-svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .project-section-btn {
+    width: 68px;
+    height: 68px;
+  }
+
+  .project-ref-pic {
+    width: 30px;
+  }
+
+  .project-section-skills-list {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .project-section {
+    min-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .projects-swiper-slide {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    margin-bottom: 64px;
+  }
+
+  .project-section-title {
+    max-width: 494px;
+    line-height: 100%;
+  }
+
+  .project-section-light-part {
+    min-width: 50%;
+  }
+
+  .project-section-dark-part {
+    min-width: 50%;
+  }
+}
