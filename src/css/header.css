@@ -43,6 +43,7 @@
   line-height: 0;
   background-color: yellow;
   border-radius: 50%;
+  outline: none;
 }
 
 .mobile-menu-open-btn:focus,
@@ -90,6 +91,7 @@
   top: 32px;
   right: 16px;
   transition: transform var(--transition);
+  outline: none;
 }
 
 .mobile-menu-wrapper.is-open {
