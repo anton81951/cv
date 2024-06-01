@@ -200,6 +200,10 @@
     height: 68px;
   }
 
+  .project-ref-container {
+    flex-direction: row;
+  }
+
   .project-ref-pic {
     width: 30px;
   }

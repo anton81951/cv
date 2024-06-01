@@ -16,15 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const mobileMenuCloseBtn = document.querySelector('.mobile-menu-close-btn');
   const menuItems = document.querySelectorAll('.mobile-menu-link');
-  const orderProjectLink = document.querySelector('.header-link-mobile');
 
   mobileMenuCloseBtn.addEventListener('click', closeMenu);
 
   menuItems.forEach(function (item) {
     item.addEventListener('click', closeMenu);
   });
-
-  orderProjectLink.addEventListener('click', closeMenu);
 });
 
 // ---------------------------------------------------------------

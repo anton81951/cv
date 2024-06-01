@@ -46,9 +46,6 @@ const mySwiper = new Swiper('.swiper-skills-list-container', {
   keyboard: {
     enabled: true,
   },
-  mousewheel: {
-    invert: true,
-  },
   breakpoints: {
     320: {
       slidesPerView: 2,
