@@ -111,8 +111,7 @@
   border-color: yellow;
 }
 
-.project-section-btn:hover,
-.project-section-btn:focus {
+.project-section-btn:hover {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
