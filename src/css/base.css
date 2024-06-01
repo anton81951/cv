@@ -80,22 +80,7 @@ button {
   color: var(--text-color);
 }
 
-.order-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  width: 163px;
-  height: 55px;
-  background-color: var(--button-color);
-  border-radius: 30px;
-  color:var(--primary-dark-color);
-}
 
-.order-link:hover {
-  background: var(--accent-color);
-  text-decoration: underline;
-}
 
 @media screen and (min-width: 768px) {
   .section {

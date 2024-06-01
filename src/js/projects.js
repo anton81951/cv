@@ -10,6 +10,7 @@ const projectsSwiper = new Swiper('.projects-swiper', {
   },
   mousewheel: {
     invert: true,
+    forceToAxis: true
   },
   slidesPerView: 1,
   watchOverflow: true,

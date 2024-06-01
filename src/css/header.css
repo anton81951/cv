@@ -169,9 +169,8 @@
   /* ----------- DROPDOWN MENU ----------- */
 
   .dropdown {
-    background: none;
     border: none;
-    border-radius: 30px;
+    border-radius: 20px;
     outline: none;
     justify-content: center;
   align-items: center;
@@ -196,6 +195,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     column-gap: 15px;
@@ -209,11 +209,44 @@
     z-index: 999;
   }
 
-  .dropdown:hover,
-  .dropdown-content a:hover,
-  .dropdown-content a:focus {
-    text-decoration: underline;
+  .order-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 163px;
+    height: 55px;
+    background-color: var(--button-color);
+    border-radius: 20px;
+    color:var(--primary-dark-color);
   }
+
+  .dropdown-link:hover,
+.dropdown-link:focus {
+  background: var(--accent-color);
+}
+}
+
+.dropdown-link {
+  margin: 0 auto;
+  max-width: fit-content;
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  border-color: transparent;
+  border-radius: 20px;
+  color: var(--primary-dark-color);
+  transition: background-color var(--transition);
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap:10px;
+  font-size: 12px;
+}
+
+.order-link:hover,
+.order-link:focus {
+  background: var(--accent-color);
+  filter: drop-shadow(1px 1px 1px yellow);
 }
 
 /* -----------  ----------- */
