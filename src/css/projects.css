@@ -226,9 +226,6 @@
   }
 
   .projects-swiper-slide {
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
     margin-bottom: 64px;
   }
 
@@ -236,4 +233,16 @@
     max-width: 494px;
     line-height: 100%;
   }
+
+  .project-section-light-part {
+    min-width: 50%;
+  }
+
+  .project-section-dark-part {
+    min-width: 50%;
+  }
+
+
+
+
 }
